@@ -1,5 +1,5 @@
 name: Test Project
-on: push
+on: [push, workflow_dispatch] # We added a manual trigger here besides the push event
 jobs:
   test:
     runs-on: ubuntu-latest
